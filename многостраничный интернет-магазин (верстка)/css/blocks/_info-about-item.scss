@@ -1,0 +1,120 @@
+.info-about-item {
+    min-height: 730px;
+    background-color: $white;
+    border: 1px solid #eaeaea;
+    @include flex(flex-start, center);
+    flex-direction: column;
+    margin-top: -88px;
+    position: relative;
+    z-index: 1;
+    .divider {
+        @include font(14px, 700);
+        line-height: 24px;
+        color: $pink;
+        border-bottom: 1px solid #eaeaea;
+        margin-top: 73px;
+        padding-bottom: 14px;
+        position: relative;
+        &::after {
+            content: "";
+            display: block;
+            background-color: $pink;
+            width: 63px;
+            height: 3px;
+            position: absolute;
+            margin-top: 13px;
+            margin-left: 42px;
+        }
+    }
+    .sp-item-name {
+        @include font(18px, 900);
+        /* line-height: 24px; */
+        text-transform: uppercase;
+        color: #4d4d4d;
+        margin-bottom: 67px;
+    }
+    .detailed-desc {
+        border-bottom: 1px solid #eaeaea;
+        &-text {
+            width: 620px;
+            @include font(14px, 300);
+            /* line-height: 24px; */
+            color: #5e5e5e;
+            margin-bottom: 28px;
+            text-align: center;
+        }
+        .item-detailes {
+            @include flex(center, normal);
+            .item-detail {
+                @include font(14px, 700);
+                /* line-height: 24px; */
+                font-weight: 700;
+                color: #b9b9b9;
+                margin-right: 44px;
+                &-name {
+                    color: #2f2f2f;
+                }
+            }
+        }
+        .sp-item-price {
+            @include font(24px, 700);
+            /* line-height: 24px; */
+            color: $darker-pink;
+            text-align: center;
+            margin-top: 37px;
+            margin-bottom: 43px;
+        }
+    }
+    .order-details {
+        @include flex(flex-start, normal);
+        width: 645px;
+        padding: 60px 50px 30px 50px;
+        .order-detail {
+            margin-left: 40px;
+            &-text {
+                @include font(14px, 700);
+                /* line-height: 24px; */
+                color: #2f2f2f;
+            }
+            .sp-option, .quantity {
+                width: 140px;
+                height: 35px;
+                background-color: $white;
+                border: 1px solid #eaeaea;
+                @include font(13px,400);
+                /* line-height: 24px; */
+                color: #bcbcbc;
+                padding-left: 13px;
+                padding-top: 6px;
+                padding-bottom: 6px;
+                margin-top: 14px;
+            }
+            .quantity::placeholder {
+                @include font();
+                /* line-height: 24px; */
+                color: #bcbcbc;
+            }
+        }
+    }
+    .add-to-cart {
+        width: 645px;
+        height: 55px;
+        background-color: $white;
+        border: 1px solid $darker-pink;
+        @include flex(center, center);
+        transition: 0.3s;
+        &-text {
+            @include font(16px, 700);
+            /* line-height: 1.2; */
+            color: $darker-pink;
+            padding-top: 5px;
+        }
+        .cart-img {
+            margin-right: 15px;
+        }
+        &:hover {
+            box-shadow: 0 0 5px rgb(241, 109, 127);
+            transition: 0.3s;
+        }
+    }
+}

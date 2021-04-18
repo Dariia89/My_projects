@@ -1,0 +1,71 @@
+@mixin flex($justify-content:flex-start, $align-items:normal) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin font($size:14px, $weight:400) {
+    font-size: $size;
+    font-weight: $weight;
+}
+
+@mixin cart-btn($width, $height) {
+    width: $width;
+    height: $height;
+    background-color: $white;
+    border: 1px solid #eaeaea;
+}
+
+@mixin cart-btn-text {
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #4a4a4a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

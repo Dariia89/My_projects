@@ -1,0 +1,141 @@
+.feedback {
+    background-image: url(../img/bg_footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    background-color: rgba(242,242,242,0.5);
+    min-height: 438px;
+    opacity: 0.8;
+
+    &-container {
+        @include flex(space-between, normal);
+        padding-top: 115px;
+        padding-bottom: 157px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 438px;
+
+        .reviews {
+            width: $cont-width/2;
+
+            .review {
+                @include flex(flex-start, normal);
+
+                .reviewer-photo {
+                    align-self: flex-start;
+                    border: 0.2px solid rgba(242,242,242,0.5);
+                    border-radius: 100px;
+                    margin-right: 28px;
+                }
+
+                .review-text {
+                    width: $cont-width/3;
+
+                    .comment {
+                        @include font(16px, 400);
+                        line-height: 26px;
+                        font-style: italic;
+                        letter-spacing: 0.025em;
+                        color: #222224;
+                        margin-bottom: 18px;
+                    }
+
+                    .reviewer-name {
+                        @include font(16px, 700);
+                        line-height: 26px;
+                        letter-spacing: 0.025em;
+                        color: $pink;
+                        margin: 0;
+                    }
+
+                    .reviewer-city {
+                        @include font(12px, 300);
+                        line-height: 14px;
+                        color: #222224;
+                    }
+                }
+            }
+        }
+
+        .white-border {
+            margin-top: -115px;
+            margin-bottom: -157px;
+            width: 1px;
+            height: 438px;
+        }
+
+        .subscribe {
+            width: $cont-width/2;
+        
+            .sub-text {
+                text-align: center;
+                margin-bottom: 35px;
+        
+                .sub-heading {
+                    @include font(24px, 400);
+                    /* line-height: 54px; */
+                    text-transform: uppercase;
+                    letter-spacing: 0.0025em;
+                    color: #222224;
+                    margin: 0;
+                }
+        
+                .sub-subtext {
+                    @include font();
+                    line-height: 24px;
+                    text-transform: uppercase;
+                    letter-spacing: 0.0025em;
+                    color: #222224;
+                    /* text-transform: none; */
+                }
+            }
+        
+            .sub-form {
+                @include flex(flex-start, normal);
+                margin-left: 90px;
+        
+                .sub-email {
+                    border-radius: 23px 0px 0px 23px;
+                    margin: 0;
+                    padding-top: 10px;
+                    padding-bottom: 10px; 
+                    padding-left: 28px;
+                    border: none;
+                    background-color: #e1e1e1;
+                    min-height: 46px;
+                    min-width: $cont-width/4;
+        
+                    &::placeholder {
+                        opacity: 0.67;
+                        @include font();
+                        line-height: 54px;
+                        letter-spacing: 0.025em;
+                        color: #222224;
+                        padding: 0;
+                        margin: 0;
+                    }
+                    &::-moz-placeholder {
+                        color: #e1e1e1;
+                    }
+                }
+                .sub-btn {
+                    @include font();
+                    /* line-height: 54px; */
+                    letter-spacing: 0.025em;
+                    color: $white;
+                    background-color: $pink;
+                    border-radius: 0px 23px 23px 0px;
+                    border: none;
+                    height: 46px;
+                    width: 104px;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: $darker-pink;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
