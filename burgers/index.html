@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burgers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5e0e63fbc8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header" class="flex">
+        <div id="logo-block" class="flex">
+            <i class="fas fa-hamburger" id="logo"></i>
+            <span id="logo-text">Burger House</span>
+        </div>
+
+        <nav id="navbar">
+            <ul id="navlist" class="flex">
+                <li class="nav-li cl-effect-14">
+                    <a href="#filter" class="nav-link">Create a burger</a>
+                </li>
+                <li class="nav-li cl-effect-14">
+                    <a href="#features" class="nav-link">Why choose us?</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="clearfix"></div>
+
+    <main>
+        <section id="filter">
+            <h1 id="create-burger">Create your own burger!</h1>
+            <form action="#" id="filter-form">
+                <fieldset>
+                    <legend>Size</legend>
+                        <input data-price="50" data-cal="20" id="small" type="radio" name="size" value="small" checked>
+                        <label for="small">Small</label>
+                        <input data-price="100" data-cal="40" id="big" type="radio" name="size" value="big">
+                        <label for="big">Big</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Add</legend>
+                        <input name="stuffing" data-price="10" data-cal="20" id="cheese" checked value="cheese" type="radio">
+                        <label for="cheese">Cheese</label>
+                        <input name="stuffing" data-price="20" data-cal="50" id="lettuce" value="lettuce" type="radio">
+                        <label for="lettuce">Lettuce</label>
+                        <input name="stuffing" data-price="15" data-cal="10" id="potato" value="potato" type="radio">
+                        <label for="potato">Potato</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Toppings</legend>
+                        <input name="topping" data-price="20" data-cal="5" id="mayonnaise" value="mayonnaise" type="checkbox">
+                        <label for="mayonnaise">Mayonnaise</label>
+                        <input name="topping" id="spices" type="checkbox" value="spices" data-price="15" data-cal="0">
+                        <label for="spices">Spices</label>
+                </fieldset>
+            </form>
+
+            <button id="count">Count</button>
+
+            <div id="result">
+            </div>
+        </section>
+
+        <section id="features" class="flex">
+            <div class="icons">
+              <i class="far fa-grin-hearts icon"></i>
+              <i class="fas icon fa-shipping-fast"></i>
+              <i class="fas fa-percent icon"></i>
+            </div>
+             <ul id="feat-list">
+               <li class="feat-li">
+                 <div class="feat-desc">
+                   <h3 class="feat-heading">Incredibly Tasty</h3>
+                   <span class="feat-text">Love at first bite!</span>   
+                 </div>
+                </li>
+               <li class="feat-li">
+                 <div class="feat-desc">
+                   <h3 class="feat-heading">Fast Delivery</h3>
+                   <span class="feat-text">We'll deliver your order within 25 minutes.</span> 
+                 </div> 
+               </li>
+               <li class="feat-li">
+                 <div class="feat-desc">
+                   <h3 class="feat-heading">Discount</h3>
+                   <span class="feat-text">35% discount for your first order! Hurry up and choose you burger.</span> 
+                 </div>
+               </li>
+             </ul>
+          </section>
+
+    </main>
+
+    <footer>&copy; Dariia Pliaskina, Burger House Corporated, 2021</footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
