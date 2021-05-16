@@ -1,0 +1,69 @@
+.pagination-container {
+    @include flex(space-between, center);
+    width: 864px;
+    margin-bottom: 125px;
+    .pagination {
+        @include flex(space-around, center);
+        height: 44px;
+        background-color: $white;
+        border: 1px solid #ebebeb;
+        border-radius: 3px;
+        width: 260px;
+        .page-back {
+            /* line-height: 26px; */
+            @include font();
+            color: #aaaaaa;
+            border: none;
+            background-color: $white;
+            padding-right: 0;
+            padding-left: 15px;
+        }
+        .page-forward {
+            /* line-height: 26px; */
+            @include font();
+            color: $darker-pink;
+            background-color: $white;
+            border: none;
+            padding-right: 15px;
+            padding-left: 0;
+        }
+        .pagination-list {
+            @include flex(space-between, center);
+            padding-inline-start: 0;
+            margin-right: 15px;
+            width: 184px;
+            .page-li {
+                list-style-type: none;
+                .page-link {
+                    text-decoration: none;
+                    @include font(16px, 300);
+                    /* line-height: 26px; */
+                    color: #c4c4c4;
+                }
+                .page-link-active {
+                    color: $darker-pink;
+                }
+            } 
+    
+        }
+    }
+    .view-all {
+        width: 150px;
+        height: 44px;
+        background-color: $white;
+        border: 1px solid $darker-pink;
+        border-radius: 3px;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.3s;
+        &-text {
+            @include font(16px, 300);
+            /* line-height: 26px; */
+            color: $darker-pink;
+        }
+        &:hover {
+            box-shadow: 0 0 5px rgb(241, 109, 127);
+            transition: 0.3s;
+        }
+    }
+}

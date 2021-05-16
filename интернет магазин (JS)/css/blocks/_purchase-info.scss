@@ -1,0 +1,128 @@
+.purchase-info {
+    @include flex(flex-start, flex-start);
+}
+
+.purchase-heading {
+    @include font(16px, 700);
+    // line-height: 1.2;
+    text-transform: uppercase;
+    color: $black;
+}
+
+.ship-det {
+    width: 355px;
+    height: 45px;
+    background-color: $white;
+    border: 1px solid #eaeaea;
+    margin-bottom: 20px;
+    padding: 12px;
+}
+
+.ship-det::placeholder, .shipping-country {
+    @include font(13px, 300);
+    line-height: 1.2;
+    color: #b1b1b1;
+}
+
+.shipping-address, .coupon-form {
+    @include flex(flex-start, flex-start);
+    flex-direction: column;
+}
+
+.coupon {
+    margin-left: 35px;
+    margin-right: 35px;
+    &-text {
+        @include font(13px, 300);
+        // line-height: 1.2;
+        color: #000000;
+    }
+}
+
+.apply-coupon {
+    @include cart-btn(118px, 35px);
+    transition: 0.3s;
+    &:hover {
+        box-shadow: 0 0 5px rgba(0,0,0,0.5);
+        transition: 0.3s;
+    }
+    &-text {
+        @include cart-btn-text;
+        @include font(11px, 700);
+    }
+}
+
+.order-proceed {
+    width: 360px;
+    height: 214px;
+    background-color: #f5f3f3;
+    @include flex(flex-start, flex-end);
+    flex-direction: column;
+    padding-top: 40px;
+    padding-right: 41px;
+}
+
+.total-price {
+    border-bottom: 1px solid #e2e2e2;
+    width: 273px;
+    text-align: right;
+    padding-bottom: 18px;
+}
+
+.subtotal-text, .subtotal-text-sum {
+    @include font(11px, 400);
+    // line-height: 1.2;
+    text-transform: uppercase;
+    color: #4a4a4a;
+}
+
+.subtotal-text-sum, .total-text-sum {
+    margin-left: 20px;   
+}
+
+.total-text {
+    @include font(16px, 700);
+    // line-height: 1.2;
+    text-transform: uppercase;
+    margin-top: 20px;
+    color: $black;
+    &-sum {
+        color: $pink;
+    }
+}
+
+.to-checkout {
+    width: 273px;
+    height: 50px;
+    background-color: $pink;
+    border: none;
+    margin-top: 17px;
+    text-align: center;
+    padding-top: 15px;
+    @include font(16px, 700);
+    // line-height: 1.2;
+    text-transform: uppercase;
+    color: $white;
+    text-decoration: none;
+    &:hover {
+        background-color: $darker-pink;
+    }
+}
+
+.get-quote {
+    @include flex(flex-start, center);
+    margin-bottom: 79px;
+    margin-top: 18px;
+    &-btn {
+        @include cart-btn(100px,35px);
+        transition: 0.3s;
+        &:hover {
+            box-shadow: 0 0 5px rgba(0,0,0,0.5);
+            transition: 0.3s;
+        }
+        &-text {
+            @include font(11px, 700);
+            @include cart-btn-text;
+        }
+    }
+    }

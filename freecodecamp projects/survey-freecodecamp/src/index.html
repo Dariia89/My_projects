@@ -1,0 +1,72 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey</title>
+  <link rel="stylesheet" href="form.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Josefin+Slab:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+  <h1 id="title">Survey</h1>
+    <p id="description">Thank you for taking part in our survey!</p>
+  <form action="#" id="survey-form">
+    <ul>
+      <li><label for="name" id="name-label">Name</label><br>
+    <input type="text" id="name" placeholder="Name" required></li>
+      <li><label for="email" id="email-label">Email</label><br>
+    <input type="email" id="email" placeholder="Email" required></li>
+      <li><label for="tel" id="number-label">Phone Number</label><br>
+    <input type="text" id="tel" placeholder="+7(000)000 00-00" required></li>
+      <li>
+        <label for="age" id="number-label">Age</label><br>
+        <input type="number" min="16" max="100" id="age" placeholder="Age">
+      </li>
+      <li class="check-and-radio">
+        <p class="exp">Your gender</p>
+        <input value="male" type="radio" id="male" name="gender">
+        <label for="male">Male</label>
+        <input value="female" type="radio" id="female" name="gender">
+        <label for="female">Female</label>
+      </li>
+      <li><label for="dropdown">Occupation</label><br>
+   <select name="Occupation" id="dropdown">
+     <option value="Student">Student</option>
+     <option value="Working in company">Working in company</option>
+     <option value="Freelancer">Freelancer</option>
+     <option value="Not working">Not working</option>
+     </select></li>
+      <li class="check-and-radio">
+        <p class="exp">Choose things that you are interested in:</p>
+        <input id="music" type="checkbox" value="music">
+        <label for="music">Music</label><br>
+        <input type="checkbox" id="books" value="books">
+        <label for="books">Books</label><br>
+        <input type="checkbox" id="videogames" value="videogames">
+        <label for="videogames">Videogames</label><br>
+        <input type="checkbox" id="films" value="films">
+        <label for="films">Films</label><br>
+        <input type="checkbox" id="tvseries" value="tvseries">
+        <label for="tvseries">TV Series</label><br>
+        <input type="checkbox" id="sport" value="sport">
+        <label for="sport">Sport</label><br>
+        <input type="checkbox" id="dances" value="dancing">
+        <label for="dances">Dancing</label><br>
+        <input type="checkbox" id="painting" value="painting">
+        <label for="painting">Painting</label>
+      </li>
+      <li>
+        <p class="exp">What is your biggest dream?</p>
+        <textarea id="textarea" cols="30" rows="10" placeholder="Your dream..."></textarea></li>
+    </ul>
+    <input type="submit" value="Submit" id="submit">
+  </form>  
+  </div>
+  <script src="form.js"></script>
+</body>
+</html>

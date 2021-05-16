@@ -1,0 +1,113 @@
+.table-cart {
+    flex-flow: column nowrap;
+}
+
+.cart-row {
+    border-bottom: 1px solid #eaeaea;
+    @include flex(space-between, center); 
+    flex-wrap: nowrap; 
+    padding-top: 22px;
+    padding-bottom: 23px;
+    @include font(13px, 400);
+    line-height: 20px;
+    color: #656565;
+}
+
+.cart-heading {
+    @include font(13px, 700);
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: -0.015em;
+    color: $black;
+}
+
+.cart-grow {
+    flex-grow: 1;
+    max-width: 500px;
+}
+
+.cart-product {
+    @include flex(flex-start, center);
+    .cart-item-img {
+        margin-right: 21px;
+    }
+    .cart-item-name {
+        @include font(13px, 400);
+        line-height: 1.2;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $black;
+        margin-bottom: 38px;
+    }
+    
+    .cart-item-det {
+        @include font(13px, 400);
+        line-height: 20px;
+        color: #575757;
+        margin-bottom: 5px;
+            .cart-det-name {
+                @include font(13px, 300);
+                color: #6f6e6e;
+            }
+    }
+    
+}
+
+.cart-quantity {
+    width: 54px;
+    height: 30px;
+    background-color: $white;
+    border: 1px solid #eaeaea;
+    padding: 0;
+    &[value] {
+        text-align: center;
+        @include font(13px, 400);
+        line-height: 20px;
+        color: #656565;
+        }
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0; 
+        }
+    &:active {
+        padding: 10px 22px;
+    }
+}
+
+.cart-shipping {
+    padding-right: 10px;
+}
+
+.fa-times-circle {
+    font-family: FontAwesome;
+    @include font(16px, 400);
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #c0c0c0;
+    margin-right: 19px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    &:hover {
+        color: $pink;
+        transition: 0.3s ease;
+    }
+}
+
+.cart-nav {
+    @include flex(space-between, center);
+    margin-top: 45px;
+    margin-bottom: 63px;
+    &-btn {
+        @include cart-btn(235px, 50px);
+        transition: 0.3s;
+        &-text {
+            @include cart-btn-text;
+            @include font(14px, 700);
+        }
+        &:hover {
+            box-shadow: 0 0 5px rgba(0,0,0,0.5);
+            transition: 0.3s;
+        }
+    }
+}

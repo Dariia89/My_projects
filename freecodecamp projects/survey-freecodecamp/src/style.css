@@ -1,0 +1,88 @@
+body {
+    background-color: lightpink;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 600;
+  }
+  .container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightpink;
+    padding: 35px;
+  }
+  /* font-family: 'Cinzel', serif;
+  font-family: 'Josefin Slab', serif; */
+  
+  #title {
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  #description {
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  
+  form {
+    width: 50%;
+    background-color: lightcoral;
+    border: 1px solid black;
+    border-radius: 40px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  
+  ul li {
+    list-style-type: none;
+    margin-bottom: 15px;
+  }
+  label, .exp {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .exp {
+    margin-bottom: 10px;
+  }
+  input, select, #textarea {
+    margin-top: 10px;
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0px;  
+    font-family: 'Josefin Slab', serif;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  input:focus, select:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+  }
+  select:hover, .check-and-radio label:hover, #submit:hover {
+    cursor: pointer;
+  }
+  #submit:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+  select {
+    width: 94%;
+  }
+  
+  .check-and-radio input {
+    width: initial;
+  }
+  #submit {
+    width: 40%;
+    align-self: center;
+  }
+  .correct {
+      border: 2px solid green;
+  }
+  .wrong {
+        border: 2px solid red;
+  }

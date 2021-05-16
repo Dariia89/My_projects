@@ -1,0 +1,34 @@
+.new-arr-header {
+    min-height: 148px;
+    background-color: #f8f3f4;
+    // margin-top: 22px;
+    /* margin-bottom: 59px; */
+
+    &-container {
+        min-height: 148px;
+        @include flex(space-between, center);
+        margin-top: 0;
+        margin-top: 20px;
+        
+
+        .new-arrivals-heading {
+            @include font(24px, 900);
+            /* line-height: 20px; */
+            text-transform: uppercase;
+            color: $pink;
+        }
+
+        .bcrumb {
+            @include font(14px, 300);
+            /* line-height: 20px; */
+            text-transform: uppercase;
+            color: #636363;
+            text-decoration: none;
+        }
+
+        .new-arrivals-bcrumb {
+            @include font(14px, 700);
+            color: $pink;
+        }
+    }
+}

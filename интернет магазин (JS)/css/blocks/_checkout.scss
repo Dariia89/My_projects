@@ -1,0 +1,139 @@
+.checkout {
+    margin-top: 89px;
+    margin-bottom: 93px;
+    &-list {
+    padding-bottom: 27px;
+    padding-top: 32px;
+    border-bottom: 1px solid #e8e8e8;
+    }
+    &-title {
+        @include font(16px,800);
+        line-height: 1.2;
+        text-transform: uppercase;
+        &::-webkit-details-marker {
+            display: none;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &-container {
+        @include flex();
+        padding-top: 39px;
+        padding-left: 39px;
+        padding-bottom: 79px;
+    }
+}
+
+.log-in {
+    margin-left: 292px;
+}
+
+.register {
+    min-width: 260px;
+    &-heading {
+        @include font(13px,600);
+        line-height: 1.2;
+        text-transform: uppercase;
+        color: $black;
+    }
+    &-text {
+        @include font(13px,400);
+        line-height: 1.2;
+        color: #b3b2b2;
+        margin-bottom: 34px;
+    }
+    &-advantages {
+        @include font(13px,400);
+        line-height: 20px;
+        color: #b3b2b2;
+    }
+}
+
+.checkout-form {
+    margin-bottom: 33px;
+    .checkout-option {
+        margin-bottom: 20px;
+        @include flex(flex-start, center);
+        .as-guest-radio, .register-radio {
+            margin: 0;
+        }
+        .as-guest-option, .register-option {
+            @include font(12px,600);
+            line-height: 1.2;
+            text-transform: uppercase;
+            color: $black;
+            margin-left: 14px;       
+        }
+    }
+}
+
+.continue-btn {
+    @include cart-btn(180px, 50px);
+    margin-top: 38px;
+    transition: 0.3s;
+    &:hover {
+        box-shadow: 0 0 5px rgba(0,0,0,0.5);
+        transition: 0.3s;
+    }
+    &-text {
+        @include font(13px,700);
+        @include cart-btn-text;
+    }
+}
+
+.login-form {
+    @include flex(flex-start,flex-start);
+    flex-direction: column;
+    .login-text {
+        @include font(12px, 600);
+        line-height: 20px;
+        color: $black;
+    }
+    .field-login {
+        width: 390px;
+        height: 45px;
+        background-color: $white;
+        border: 1px solid #eaeaea;
+        padding: 10px;
+        margin-top: 16px;
+        margin-bottom: 23px;
+    }
+}
+
+.red {
+    @include font(17px, 600);
+    line-height: 20px;
+    color: #ff0d0d;
+}
+
+.required-text {
+    @include font(13px, 400);
+    line-height: 20px;
+    color: #ff0d0d;
+}
+
+.log-forget {
+    @include flex(flex-start, flex-start);
+    margin-top: 38px;
+    .login-btn {
+        @include cart-btn(180px, 50px);
+        transition: 0.3s;
+        &:hover {
+            box-shadow: 0 0 5px rgba(0,0,0,0.5);
+            transition: 0.3s;
+        }
+        &-text {
+            @include cart-btn-text;
+            @include font(13px,700);
+        }
+    }
+    .forgot-password {
+        @include font(14px, 600);
+        line-height: 20px;
+        text-decoration: none;
+        padding-top: 18px;
+        margin-left: 32px;
+        color: $black;
+    } 
+}

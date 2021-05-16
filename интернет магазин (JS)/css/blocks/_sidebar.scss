@@ -1,0 +1,55 @@
+.sidebar {
+    width: $cont-width/4.6;
+    margin-right: 50px;
+
+    &-list {
+        padding-bottom: 20px;
+
+        &[open] .sidebar-title::after {
+            content: "\f0d8";
+            font-family: FontAwesome;
+            @include font();
+            text-transform: uppercase;
+            color: $darker-pink; 
+        }
+
+        .sidebar-title {
+            @include font(14px, 700);
+            /* line-height: 20px; */
+            text-transform: uppercase;
+            color: $darker-pink;
+            border-left: 5px solid $darker-pink;
+            border-bottom: 1px solid #ebebeb;
+            padding: 12px;
+            @include flex(space-between, normal);
+
+            &::-webkit-details-marker {
+                display: none;
+            }
+            &::after {
+                content: "\f0d7"; 
+                font-family: FontAwesome;
+                @include font();
+                text-transform: uppercase;
+                color: #6f6e6e;
+            }
+        }
+
+        &-nav {
+            padding-inline-start: 15px;
+        
+            & li {
+                list-style-type: none;
+                margin-bottom: 20px;
+                margin-left: 0;
+        
+                .sidebar-nav-link {
+                    @include font();
+                    /* line-height: 33px; */
+                    color: #6f6e6e;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
