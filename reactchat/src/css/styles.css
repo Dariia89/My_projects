@@ -1,0 +1,236 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:active, *:focus {
+  border: none;
+  outline: none;
+}
+
+html,
+body {
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Lato', Arial, sans-serif;
+  background-color: white;
+  padding: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header, footer {
+  background-color: black;
+  width: 100%;
+  padding: 0 40px;
+  color: white;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+}
+
+header h1 {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inconsolata', monospace;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+header h1 .msg-icon {
+  margin-right: 10px;
+}
+
+.button {
+  width: 100px;
+  height: 35px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: lightgrey;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+main {
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+}
+
+main .welcome-block {
+  font-size: 20px;
+  font-weight: 400;
+  width: 500px;
+  text-align: center;
+}
+
+main .chat-block {
+  min-width: 100%;
+  background-color: #fff;
+}
+
+main .chat-block .messages {
+  overflow-y: scroll;
+  height: 400px;
+  min-width: 800px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+main .chat-block .messages::-webkit-scrollbar {
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: white;
+  padding: 3px;
+}
+
+main .chat-block .messages::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 5px;
+}
+
+form {
+  height: 45px;
+  margin-top: 15px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form input {
+  height: 45px;
+  padding: 7px;
+  border: 1px solid black;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+form input:focus {
+  border: 1px solid black;
+  border-radius: 5px 0 0 5px;
+}
+
+form .button-send {
+  background-color: black;
+  color: white;
+  width: 120px;
+  height: 45px;
+  border-radius: 0 5px 5px 0;
+}
+
+form .button-send:hover {
+  opacity: 0.9;
+  color: black;
+}
+
+.message-block {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 15px;
+}
+
+.message-block .user-img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.message-block .message-text {
+  background-color: white;
+  color: black;
+  padding: 5px 10px;
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Inconsolata', monospace;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 65px;
+}
+/*# sourceMappingURL=styles.css.map */
