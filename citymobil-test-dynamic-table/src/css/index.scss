@@ -1,0 +1,57 @@
+@import './blocks/mixins';
+@import './blocks/variables';
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  min-width: 1440px;
+  min-height: 100%;
+
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+
+  @include flex(center, space-between);
+  flex-direction: column;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.hidden {
+  display: none;
+}
+
+#sort:hover, tbody tr:hover, thead td:first-child label:hover, button:hover{
+  cursor: pointer;
+}
+
+.fontAwesome {
+  font-family: 'Helvetica', FontAwesome, sans-serif;
+}
+
+@import './blocks/structure';
+
+.heading {
+  @include font(44px, 600);
+  line-height: 43px;
+  color: $section-text;
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+@import './blocks/table';
+@import './blocks/scrollbar';
+@import './blocks/search';
+@import './blocks/chosenCarBlock';

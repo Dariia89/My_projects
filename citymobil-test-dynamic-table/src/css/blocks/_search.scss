@@ -1,0 +1,38 @@
+.search-form {
+    width: 1136px;
+    height: 42px;
+    margin: 16px 0 32px 0;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  
+  .search-input {
+    width: 932px;
+    height: 40px;
+    margin-right: 8px;
+    background: rgba(240, 242, 244, 0.5);
+    border: none;
+    outline: 1px solid $bg-table-head;
+    box-shadow: inset -1px 0px 0px rgba(198, 209, 221, 0.5);
+    color: $table-dark;
+    @include font(12px, 500);
+    line-height: 16px;
+    padding-left: 18px;
+  }
+  
+  .search-input::placeholder, .search-icon {
+    color: $table-dark;
+    @include font(12px, 500);
+    line-height: 16px;
+  }
+  
+  .search-btn {
+    width: 169px;
+    height: 42px;
+    background-color: $table-dark;
+    color: #fff;
+    padding: 0;
+    @include font(14px, 500);
+    line-height: 16px;
+    border: none;
+    outline: none;
+  }

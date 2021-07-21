@@ -1,0 +1,21 @@
+.chosen-car-text {
+    width: 1136px;
+    height: 42px;
+    background-color: rgba(240, 242, 244, 0.5);
+    color: $table-dark;
+    font-family: 'IBM Plex Mono', monospace;
+    border: none;
+    outline: 1px solid $bg-table-head;
+    box-shadow: inset -1px 0px 0px rgba(198, 209, 221, 0.5);
+    margin: 16px 0 32px 0;
+    padding: 0;
+  
+    @include flex(flex-start, center);
+  }
+  
+  .chosen-car-text span {
+    margin-left: 16px;
+    color: $table-dark;
+    @include font(12px, 600);
+    line-height: 16px;
+  }

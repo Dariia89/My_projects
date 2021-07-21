@@ -1,0 +1,319 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 1440px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.hidden {
+  display: none;
+}
+
+#sort:hover, tbody tr:hover, thead td:first-child label:hover, button:hover {
+  cursor: pointer;
+}
+
+.fontAwesome {
+  font-family: 'Helvetica', FontAwesome, sans-serif;
+}
+
+.structure-block {
+  min-width: 1440px;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #F2F3F4;
+}
+
+footer {
+  background-color: #D4D5D6;
+}
+
+#sidebar {
+  background-color: #E4E5E6;
+  width: 224px;
+  height: 828px;
+}
+
+#table-block {
+  width: 1216px;
+  height: 828px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header-footer {
+  height: 128px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.header-footer, #sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: normal;
+      -ms-flex-align: normal;
+          align-items: normal;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.heading {
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 43px;
+  color: #707070;
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#table-container {
+  width: 1136px;
+  height: 608px;
+  font-family: 'IBM Plex Mono', monospace;
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgba(198, 209, 221, 0.5);
+}
+
+table, .table-container div {
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+}
+
+td {
+  -webkit-box-shadow: 1px 1px 1px rgba(198, 209, 221, 0.5);
+          box-shadow: 1px 1px 1px rgba(198, 209, 221, 0.5);
+  padding: 0;
+  width: 193px;
+}
+
+thead tr {
+  height: 48px;
+  width: 1136px;
+  background-color: #DEE5EB;
+}
+
+thead tr td {
+  height: 48px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #7B8395;
+}
+
+thead tr td:first-child {
+  width: 172px;
+}
+
+tbody {
+  width: 1136px;
+  height: 560px;
+  display: block;
+  table-layout: fixed;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+tbody tr {
+  display: table;
+  width: 1136px;
+  height: 40px;
+}
+
+tbody tr td {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #1F232E;
+  height: 40px;
+  text-align: center;
+}
+
+tbody tr td:first-child {
+  text-align: left;
+  width: 172px;
+}
+
+tbody tr td:first-child div {
+  margin-left: 16px;
+}
+
+/* Works on Firefox */
+tbody {
+  scrollbar-width: thin;
+  scrollbar-color: #DEE5EB;
+}
+
+/* Works on Chrome, Edge, and Safari */
+tbody::-webkit-scrollbar {
+  margin-left: 5px;
+  width: 5px;
+}
+
+tbody::-webkit-scrollbar-track {
+  background: #DEE5EB;
+  border-radius: 16px;
+}
+
+tbody::-webkit-scrollbar-thumb {
+  background-color: #7B8395;
+  border-radius: 20px;
+  border: 1px solid #DEE5EB;
+}
+
+.search-form {
+  width: 1136px;
+  height: 42px;
+  margin: 16px 0 32px 0;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.search-input {
+  width: 932px;
+  height: 40px;
+  margin-right: 8px;
+  background: rgba(240, 242, 244, 0.5);
+  border: none;
+  outline: 1px solid #DEE5EB;
+  -webkit-box-shadow: inset -1px 0px 0px rgba(198, 209, 221, 0.5);
+          box-shadow: inset -1px 0px 0px rgba(198, 209, 221, 0.5);
+  color: #7B8395;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  padding-left: 18px;
+}
+
+.search-input::-webkit-input-placeholder, .search-icon {
+  color: #7B8395;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.search-input:-ms-input-placeholder, .search-icon {
+  color: #7B8395;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.search-input::-ms-input-placeholder, .search-icon {
+  color: #7B8395;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.search-input::placeholder, .search-icon {
+  color: #7B8395;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.search-btn {
+  width: 169px;
+  height: 42px;
+  background-color: #7B8395;
+  color: #fff;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  border: none;
+  outline: none;
+}
+
+.chosen-car-text {
+  width: 1136px;
+  height: 42px;
+  background-color: rgba(240, 242, 244, 0.5);
+  color: #7B8395;
+  font-family: 'IBM Plex Mono', monospace;
+  border: none;
+  outline: 1px solid #DEE5EB;
+  -webkit-box-shadow: inset -1px 0px 0px rgba(198, 209, 221, 0.5);
+          box-shadow: inset -1px 0px 0px rgba(198, 209, 221, 0.5);
+  margin: 16px 0 32px 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.chosen-car-text span {
+  margin-left: 16px;
+  color: #7B8395;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+}
+/*# sourceMappingURL=index.css.map */

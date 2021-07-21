@@ -1,0 +1,22 @@
+/* Works on Firefox */
+tbody {
+    scrollbar-width: thin;
+    scrollbar-color: $bg-table-head;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  tbody::-webkit-scrollbar {
+    margin-left: 5px;
+    width: 5px;
+  }
+  
+  tbody::-webkit-scrollbar-track {
+    background: $bg-table-head;
+    border-radius: 16px;
+  }
+  
+  tbody::-webkit-scrollbar-thumb {
+    background-color: $table-dark;
+    border-radius: 20px;
+    border: 1px solid $bg-table-head;
+  }

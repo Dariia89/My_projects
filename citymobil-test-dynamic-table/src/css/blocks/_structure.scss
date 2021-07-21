@@ -1,0 +1,40 @@
+.structure-block {
+    min-width: 1440px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: $header-grey;
+  }
+  
+  footer {
+    background-color: $footer-grey;
+  }
+  
+  #sidebar {
+    background-color: $sidebar-grey;
+    width: 224px;
+    height: 828px;
+  }
+  
+  #table-block {
+    width: 1216px;
+    height: 828px;
+    @include flex(flex-start, center);
+    flex-direction: column;
+  }
+  
+  .header-footer {
+    height: 128px;
+    flex: 0 0 auto;
+  }
+  
+  .header-footer, #sidebar {
+    @include flex(center, center);
+  }
+  
+  #main { 
+    @include flex();
+    flex: 1 0 auto;
+  }
