@@ -1,0 +1,14 @@
+.header__container {
+    padding-top: 36px;
+    @include flex(center, center);
+}
+
+.header__heading {
+    color: $header;
+    max-width: 460px;
+    @include font(36px, 700);
+    line-height: 49px;
+    &:hover {
+        cursor: pointer;
+    }
+}

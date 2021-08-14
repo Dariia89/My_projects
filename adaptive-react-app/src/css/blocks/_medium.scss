@@ -1,0 +1,24 @@
+@media screen and (min-width: 785px) and (max-width: 1190px) {
+    .container {
+        max-width: $mediumContainer;
+    }
+
+    .houses__house {
+        width: 379px;
+        height: 381px;
+        margin-bottom: 38px;
+        background: $houseCard;
+        border: 1px solid $border;
+        color: $black;
+        transition: 0.3s;
+    
+        margin-right: 10px;
+        &:nth-child(3n) {
+            margin-right: 10px;
+        }
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+    }
+   
+}

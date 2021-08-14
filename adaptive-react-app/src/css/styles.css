@@ -1,0 +1,320 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  color: #363636;
+  text-decoration: none;
+}
+
+.header, .main, footer {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1190px;
+  margin: 0 auto;
+}
+
+.header__container {
+  padding-top: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+.header__heading {
+  color: #45852D;
+  max-width: 460px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 49px;
+}
+
+.header__heading:hover {
+  cursor: pointer;
+}
+
+.main__container {
+  margin: 0 auto;
+  margin-top: 43px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.houses__filter {
+  margin-bottom: 45px;
+  max-width: 100%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.filter__form_label {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.3px;
+  color: #363636;
+}
+
+.filter__form_input {
+  width: 418px;
+  height: 50px;
+  margin-left: 16px;
+  border: 1px solid #D8D8D8;
+  border-radius: 25px;
+  padding-left: 20px;
+}
+
+.filter__form_input:focus {
+  outline: none;
+}
+
+.houses {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.houses__house {
+  width: 379px;
+  height: 381px;
+  margin-bottom: 38px;
+  background: #F8F8F8;
+  border: 1px solid #D8D8D8;
+  color: #363636;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-right: 25px;
+}
+
+.houses__house:nth-child(3n) {
+  margin-right: 0;
+}
+
+.houses__house:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 2px 2px 2px #363636;
+          box-shadow: 2px 2px 2px #363636;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  z-index: 1;
+}
+
+.house__img-container {
+  max-width: 379px;
+  height: 227px;
+  position: relative;
+}
+
+.house__img-container_house-type {
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  height: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+.house__info {
+  padding-top: 22px;
+  padding-left: 19px;
+  height: 153px;
+}
+
+.house__info_title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.house__info_address {
+  margin: 5px 0 10px 0;
+}
+
+.house__info_price {
+  margin: 0 0 5px 0;
+}
+
+.house__info_address, .house__info_price {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.house__info_price_bold {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.house__info_text {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.btn {
+  text-align: center;
+  width: 150px;
+  height: 50px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 1px solid #D8D8D8;
+  border-radius: 25px;
+}
+
+.btn_text {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 2px 2px 2px #363636;
+          box-shadow: 2px 2px 2px #363636;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer {
+  height: 70px;
+}
+
+@media screen and (min-width: 785px) and (max-width: 1190px) {
+  .container {
+    max-width: 780px;
+  }
+  .houses__house {
+    width: 379px;
+    height: 381px;
+    margin-bottom: 38px;
+    background: #F8F8F8;
+    border: 1px solid #D8D8D8;
+    color: #363636;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    margin-right: 10px;
+  }
+  .houses__house:nth-child(3n) {
+    margin-right: 10px;
+  }
+  .houses__house:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 784px) {
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .header__heading {
+    max-width: 350px;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 29px;
+  }
+  .main__container {
+    margin: 0 auto;
+    margin-top: 43px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  .houses__filter {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .filter__form_input {
+    max-width: 300px;
+  }
+  .houses {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  .houses__house {
+    max-width: 378px;
+    max-height: 381px;
+    margin-right: 0;
+    margin-bottom: 38px;
+  }
+  .houses__house:nth-child(2n), .houses__house:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

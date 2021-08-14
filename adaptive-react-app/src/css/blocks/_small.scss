@@ -1,0 +1,38 @@
+@media screen and (max-width: 784px) {
+    .container {
+        max-width: $smallContainer;
+        margin: 0 auto;
+    }
+
+    .header__heading {
+        max-width: 350px;
+        @include font(26px, 700);
+        line-height: 29px;
+    }
+
+    .main__container {
+        margin: 0 auto;
+        margin-top: 43px;
+        @include flex(center, center, column nowrap);
+    }
+
+    .houses__filter {
+        align-self: center;
+    }
+    .filter__form_input {
+        max-width: 300px;
+    }
+    .houses {
+        @include flex(center, center, column nowrap);
+    }
+
+    .houses__house {
+        max-width: 378px;
+        max-height: 381px;
+        margin-right: 0;
+        margin-bottom: 38px;
+        &:nth-child(2n), &:nth-child(3n) {
+            margin-right: 0;
+        }
+    }
+}

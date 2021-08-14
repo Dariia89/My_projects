@@ -1,0 +1,25 @@
+.houses__filter {
+    margin-bottom: 45px;
+    max-width: 100%;
+    align-self: flex-start;
+}
+
+.filter__form_label {
+    @include font(16px, 700);
+    line-height: 24px;
+    letter-spacing: -0.3px;
+    color: $black;
+}
+
+.filter__form_input {
+    width: 418px;
+    height: 50px;
+    margin-left: 16px;
+
+    border: 1px solid $border;
+    border-radius: 25px;
+    padding-left: 20px;
+    &:focus {
+        outline: none;
+    }
+}
